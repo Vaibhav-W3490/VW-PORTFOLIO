@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <style>
+        * {
+            margin: 0;
+            color: white;
+        }
+
+        body {
+            background-color: rgb(9, 7, 60);
+        }
+
+        nav {
+            background-color: black;
+            height: 40px;
+            display: flex;
+            color: white;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .name {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 3px;
+            font-weight: bolder;
+        }
+
+        .name:hover {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            padding: 5px;
+        }
+        ul a:hover
+        {
+            color: blue;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+
+        button {
+            background-color: rgb(0, 8, 255);
+            border-radius: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        .home {
+            background-color: black;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .home button {
+
+            background-color: rgb(0, 255, 51);
+            border-color: rgb(0, 255, 255);
+            border-radius: 30px;
+            color: white;
+            height: 2rem;
+            width: 110px;
+
+        }
+
+        .home h1 {
+            font-size: 2rem;
+        }
+
+        .home span {
+            color: rgba(255, 0, 0, 0.471);
+
+        }
+
+        .home .icons {
+            display: flex;
+            gap: 20px;
+            height: 2rem;
+            width: 9rem;
+
+        }
+
+        .home .left {
+            border: 2px solid red;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgb(249, 30, 30);
+            border: 1px solid transparent;
+            animation: left 3s ease-in-out 0s infinite alternate-reverse;
+        }
+
+
+        @keyframes left {
+            from {
+
+                transform: translateY(34px);
+            }
+
+            to {
+                transform: translateY(-34px);
+            }
+
+        }
+
+        .home .right {
+            height: 70%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            top: 20px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 270px 270px;
+            grid-template-rows: 130px 130px;
+            height: 70vh;
+            gap: 200px 20px;
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        .services .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            backdrop-filter: blur(10px);
+            background-color:grey;
+            border-radius: 20px;
+            height: 300px;
+            width: 500px;
+
+        }
+
+        .servicename {
+            color: white;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .services h1 {
+            font-size: 20px;
+            text-align: start;
+            margin: 5px;
+            padding-left: 20px;
+        }
+
+
+        .services img {
+            background-color: transparent;
+            height: 30px;
+            width: 30px;
+            padding-left: 20px;
+            margin-top: 10px;
+            color: white;
+        }
+
+        .services p {
+            font-size: 10px;
+            padding-left: 26px;
+        }
+
+        .services .left {
+            animation: vaibhav1 3s ease-in-out 0s 1 forwards;
+
+        }
+
+
+        .services .left:hover {
+
+            border: 1px solid #4df6ff;
+            box-shadow: 0 0 25px #4dfff3;
+        }
+
+        .services .right {
+            transform: translateX(310px);
+            animation: vaibhav2 3s ease-in-out 0s 1 forwards;
+        }
+
+        .services .right:hover {
+            border: 1px solid #4dff94;
+            box-shadow: 0 0 25px #4dffcd;
+        }
+
+        @keyframes vaibhav1 {
+            from {
+                transform: translateX(-710px);
+            }
+
+            to {
+                transform: translateX(-210px);
+            }
+        }
+
+        @keyframes vaibhav2 {
+            from {
+                transform: translateX(710px);
+            }
+
+            to {
+                transform: translateX(20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="name">
+            VAIBHAV
+        </div>
+        <ul>
+            <a href="#sec">ABOUT</a>
+            <a href="">HOME</a>
+            <a href="">PROFILE</a>
+        </ul>
+
+        <button>CONTACT ME</button>
+    </nav>
+
+    <div class="home">
+        <div class="left">
+            <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="profile">
+        </div>
+        <div class="right">
+            <h1>About <span>Me</span></h1>
+
+            <p>Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facere cum error rem
+                temporibus? Voluptatum veniam hic quas similique eos quo ducimus dignissimos perferendis! Quo illum
+                nostrum sit perspiciatis quod! sit amet consectetur, adipisicing elit. Alias nihil quos quis, at
+                provident ea nisi praesentium dolor deleniti esse atque eligendi, consequatur eaque harum perferendis
+                eveniet similique dolorem debitis cum quo accusantium totam! Enim. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Nihil, accusamus?</p>
+            <p>Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facere cum error rem
+                temporibus? Voluptatum veniam hic quas similique eos quo ducimus dignissimos perferendis! Quo illum
+                nostrum sit perspiciatis quod! sit amet consectetur, adipisicing elit. Alias nihil quos quis, at
+                provident ea nisi praesentium dolor deleniti esse atque eligendi, consequatur eaque harum perferendis
+                eveniet similique dolorem debitis cum quo accusantium totam! Enim. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Nihil, accusamus?</p>
+
+            <button>Read More</button>
+
+        </div>
+    </div>
+
+
+    <h1 class="servicename">Services</h1>
+
+    <div class="services">
+
+        <div class="box left">
+
+            <img src="https://cdn-icons-png.flaticon.com/128/14025/14025136.png" alt="mic">
+
+            <h1>Web Development
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, ducimus voluptatibus. Id nisi illo dolores
+                n!</p>
+        </div>
+
+        <div class="box right">
+            <img src="https://cdn-icons-png.flaticon.com/128/0/191.png" alt="mic">
+
+            <h1>Mobile Apps
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, ducimus voluptatibus. Id nisi illo dolores
+                n!</p>
+        </div>
+
+        <div class="box left"> <img src="https://cdn-icons-png.flaticon.com/128/17109/17109631.png" alt="mic">
+
+            <h1>UI/UX Design
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, ducimus voluptatibus. Id nisi illo dolores
+                n!</p>
+        </div>
+
+        <div class="box right"> <img src="https://cdn-icons-png.flaticon.com/128/11676/11676400.png" alt="mic">
+
+            <h1>Backend Development
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, ducimus voluptatibus. Id nisi illo dolores
+                n!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
